@@ -16,7 +16,7 @@
 header {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('images/header-bg.jpg'); /* Add your image path */
+    background-image: url('images/header-bg.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -46,7 +46,7 @@ header h1, header p, header .cta-button {
 .career-quiz {
     padding: 60px 20px;
     text-align: center;
-    background-image: url('images/quiz-bg.jpg'); /* Add your image path */
+    background-image: url('images/quiz-bg.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -76,7 +76,7 @@ header h1, header p, header .cta-button {
 .key-features {
     padding: 60px 20px;
     text-align: center;
-    background-image: url('images/features-bg.jpg'); /* Add your image path */
+    background-image: url('images/features-bg.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -181,7 +181,6 @@ nav {
 header {
     text-align: center;
     padding: 100px 20px;
-    background-color: #F3F4F6;
 }
 
 header h1 {

@@ -130,6 +130,90 @@ header p {
     background-color: #005bb5;
 }
 
+/* Key Features Section */
+.key-features {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #F3F4F6;
+}
+
+.key-features h2 {
+    font-size: 2rem;
+    color: #0078D7;
+    margin-bottom: 20px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-card {
+    animation: fadeIn 0.5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.feature-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.feature-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+
 /* Spotlight Styles */
 .spotlight {
     padding: 20px;

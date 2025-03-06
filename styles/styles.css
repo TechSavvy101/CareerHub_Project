@@ -1,3 +1,107 @@
+/* Images*/
+/* Floating Background Animation */
+@keyframes floatBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Header Background */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('images/header-bg.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: floatBackground 20s infinite linear;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+header h1, header p, header .cta-button {
+    position: relative;
+    z-index: 2;
+}
+
+/* Career Quiz Background */
+.career-quiz {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('images/quiz-bg.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: floatBackground 20s infinite linear;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.career-quiz::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.career-quiz h2, .career-quiz p, .career-quiz button {
+    position: relative;
+    z-index: 2;
+}
+
+/* Key Features Background */
+.key-features {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('images/features-bg.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: floatBackground 20s infinite linear;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.key-features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.key-features h2, .key-features .feature-cards {
+    position: relative;
+    z-index: 2;
+}
+
 /* Navbar Styles */
 nav {
     display: flex;
@@ -76,7 +180,7 @@ nav {
 /* Header Styles */
 header {
     text-align: center;
-    padding: 50px;
+    padding: 100px 20px;
     background-color: #F3F4F6;
 }
 
@@ -234,7 +338,6 @@ header p {
     width: 200px;
 }
 
-/* Job Listings Styles */
 /* Job Listings Styles */
 .filters {
     margin: 20px 0;

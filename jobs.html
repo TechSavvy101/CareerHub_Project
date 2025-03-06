@@ -10,18 +10,62 @@
 
 </head>
 <body>
-  <nav>
-    <div class="logo">CareerHub</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="jobs.html">Jobs</a>
-      <a href="contact.html">Contact Us</a>
+    <nav>
+        <!-- Left Side: Logo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="CareerHub Logo">
+        </div>
+    
+        <!-- Center: Navigation Links -->
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    
+        <!-- Right Side: Profile Icon and Burger Menu -->
+        <div class="nav-right">
+            <a href="profile.html" class="profile-icon">
+                <img src="images/profile-icon.png" alt="Profile">
+            </a>
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+  <<main>
+    <h1>Job Listings</h1>
+    <div class="filters">
+        <input type="text" id="searchBar" placeholder="Search jobs...">
+        <select id="jobType">
+            <option value="all">All Job Types</option>
+            <option value="internship">Internship</option>
+            <option value="full-time">Full-Time</option>
+            <option value="part-time">Part-Time</option>
+        </select>
+        <select id="location">
+            <option value="all">All Locations</option>
+            <option value="remote">Remote</option>
+            <option value="new-york">New York</option>
+            <option value="san-francisco">San Francisco</option>
+        </select>
+        <button onclick="filterJobs()">Apply Filters</button>
     </div>
-  </nav>
-  <main>
-    <h1>Available Opportunities</h1>
-    <p>Use filters to find your ideal job or internship:</p>
-    <!-- Job Filters and Job Cards go here -->
-  </main>
+
+    <div class="job-listings">
+        <div class="job-card">
+            <h3>Software Engineer Intern</h3>
+            <p><strong>Company:</strong> TechCorp</p>
+            <p><strong>Location:</strong> Remote</p>
+            <p><strong>Type:</strong> Internship</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+        <!-- Add more job cards here -->
+    </div>
+</main>
+
 </body>
 </html>

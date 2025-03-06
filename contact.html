@@ -11,25 +11,58 @@
 </head>
 
 <body>
-  <nav>
-    <div class="logo">CareerHub</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="jobs.html">Jobs</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-  </nav>
-  <main>
-    <h1>Contact Us</h1>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name"><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email"><br>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea><br>
-      <button type="submit">Submit</button>
-    </form>
-  </main>
+    <nav>
+        <!-- Left Side: Logo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="CareerHub Logo">
+        </div>
+    
+        <!-- Center: Navigation Links -->
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    
+        <!-- Right Side: Profile Icon and Burger Menu -->
+        <div class="nav-right">
+            <a href="profile.html" class="profile-icon">
+                <img src="images/profile-icon.png" alt="Profile">
+            </a>
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    
+        <section class="faq">
+            <h2>FAQ</h2>
+            <p><strong>Q: How do I apply for jobs?</strong><br>A: Simply click the "Apply Now" button on the job listing.</p>
+        </section>
+    
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+    </main>
+    
 </body>
 </html>

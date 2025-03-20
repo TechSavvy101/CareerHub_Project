@@ -55,4 +55,4 @@ jobs:
           app-name: 'CareerHub'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_70BB92ACBA1F43AF8364680B5FD32927 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DBEE41CF80924A25B9955EDC6F9D4F44 }}
